@@ -1,0 +1,11 @@
+{
+    "id": "novelsmith",
+    "name": "NovelSmith",
+    "version": "1.0.0",
+    "minAppVersion": "1.4.0",
+    "description": "A comprehensive, Scrivener-inspired writing environment. Features seamless scenes merging, version control, and color-coded scene management.",
+    "author": "Pal Chung",
+    "authorUrl": "https://github.com/palchung",
+    "fundingUrl": "https://buymeacoffee.com/palchung",
+    "isDesktopOnly": false
+}

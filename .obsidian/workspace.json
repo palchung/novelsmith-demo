@@ -1,0 +1,236 @@
+{
+  "main": {
+    "id": "2ff4411c43b2e339",
+    "type": "split",
+    "children": [
+      {
+        "id": "6857f2bc060b1c6b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b77f5e165a583671",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NovelSmith_Demo_Vault/01_📖 Book One - Neon Resonance/Chapter 1 - The Neon Rain.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 1 - The Neon Rain"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fbc92a3e43841bd5",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b13d4b2717d1118",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41d82c2a98628275",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "66511fe345a865b4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4ff0aa6c58e4aa2e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 465.5
+  },
+  "right": {
+    "id": "dc001062ae86b221",
+    "type": "split",
+    "children": [
+      {
+        "id": "61c2e0c633fa5c39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7c5775a98fd6a8b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "6d261c153e281c01",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "47bfd2a209917f13",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "63058914a7018796",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "42c38a9649b67fe2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "NovelSmith_Demo_Vault/01_📖 Book One - Neon Resonance/Chapter 1 - The Neon Rain.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Chapter 1 - The Neon Rain"
+            }
+          },
+          {
+            "id": "40eaa2e5f8d27527",
+            "type": "leaf",
+            "state": {
+              "type": "novelsmith-structure-view",
+              "state": {},
+              "icon": "kanban-square",
+              "title": "NovelSmith Panel"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 405.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "novelsmith:Open NovelSmith Panel": false
+    }
+  },
+  "active": "b77f5e165a583671",
+  "lastOpenFiles": [
+    "NovelSmith_Demo_Vault/01_📖 Book One - Neon Resonance/NSmith_Scrivenering.md",
+    "NovelSmith_Demo_Vault/_Backstage/History/Sync_Snapshots/20260301_164820/Chapter 1 - The Neon Rain.md",
+    "NovelSmith_Demo_Vault/_Backstage/History/Sync_Snapshots/20260301_164820",
+    "NovelSmith_Demo_Vault/01_📖 Book One - Neon Resonance/Chapter 1 - The Neon Rain.md",
+    "NovelSmith_Demo_Vault/01_📖 Book One - Neon Resonance/Chapter 2 - The Data Heist.md",
+    "NovelSmith_Demo_Vault/_Backstage/History/preview_Temp.md",
+    "NovelSmith_Demo_Vault/_Backstage/_Scene_Database.md",
+    "NovelSmith_Demo_Vault/_Backstage/Templates/NovelSmith_Template.md",
+    "NovelSmith_Demo_Vault/04_📤 Published Output/01_📖 Book One - Neon Resonance_Export_20260301_132359.md",
+    "NovelSmith_Demo_Vault/_Backstage/Templates",
+    "NovelSmith_Demo_Vault/02_📚 World Bible/Neural-Link.md",
+    "NovelSmith_Demo_Vault/00_🏠 Start Here/👋 Welcome to NovelSmith.md",
+    "NovelSmith_Demo_Vault/03_🎯 Training Grounds/04_✂️ Split and Merge.md",
+    "NovelSmith_Demo_Vault/03_🎯 Training Grounds/03_⏪ Atomic Backups.md",
+    "NovelSmith_Demo_Vault/03_🎯 Training Grounds/02_💬 Dialogue & Redundant Mode.md",
+    "NovelSmith_Demo_Vault/03_🎯 Training Grounds/01_👮 Typo Police.md",
+    "NovelSmith_Demo_Vault/_Backstage/History/book1-001.md",
+    "NovelSmith_Demo_Vault/_Backstage/Aids/FixList.md",
+    "NovelSmith_Demo_Vault/_Backstage/Aids/RedundantList.md",
+    "NovelSmith_Demo_Vault/02_📚 World Bible/OmniCorp.md",
+    "NovelSmith_Demo_Vault/02_📚 World Bible/Quantum Drive.md",
+    "NovelSmith_Demo_Vault/02_📚 World Bible/Sector 4.md",
+    "NovelSmith_Demo_Vault/_Backstage/History/Sync_Snapshots/20260301_110137/Chapter 1 - The Neon Rain.md",
+    "NovelSmith_Demo_Vault/_Backstage/History/Sync_Snapshots/20260301_110137",
+    "NovelSmith_Demo_Vault/_Backstage/History/Sync_Snapshots",
+    "NovelSmith_Demo_Vault/04_📤 Published Output/01_📖 Book One - Neon Resonance_Export_20260301_104735.md",
+    "NovelSmith_Demo_Vault/05_📊 Dashboard/📊 The Ultimate Dashboard.md",
+    "NovelSmith_Demo_Vault/04_📤 Published Output/01_📖 Book One - Neon Resonance_Export_20260228_155930.md",
+    "NovelSmith_Demo_Vault/04_📤 Published Output/01_📖 Book One - Neon Resonance_Export_20260228_155958.md",
+    "NovelSmith_Demo_Vault/04_📤 Published Output/01_📖 Book One - Neon Resonance_Export_20260228_155948.md",
+    "NovelSmith_Demo_Vault/05_📊 Dashboard",
+    "NovelSmith_Demo_Vault/_Backstage/History",
+    "NovelSmith_Demo_Vault/_Backstage/Aids",
+    "NovelSmith_Demo_Vault/_Backstage",
+    "NovelSmith_Demo_Vault/04_📤 Published Output",
+    "NovelSmith_Demo_Vault/03_🎯 Training Grounds"
+  ]
+}

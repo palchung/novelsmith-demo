@@ -1,0 +1,404 @@
+/* ============================================================
+   🔍 Redundant words and Dialogue mode (remains unchanged)
+   ============================================================ */
+.cm-redundant-text {
+    background-color: rgba(255, 80, 80, 0.25);
+    border-bottom: 2px solid rgba(255, 0, 0, 0.6);
+    border-radius: 4px;
+    padding: 0 2px;
+}
+
+body.mode-dialogue .cm-content,
+body.mode-dialogue .markdown-preview-view {
+    color: var(--text-faint) !important;
+    transition: color 0.1s ease;
+}
+
+body.mode-dialogue .cm-dialogue-text {
+    color: var(--text-normal) !important;
+    font-weight: 600;
+    text-shadow: 0 0 1px var(--text-normal);
+    opacity: 1 !important;
+}
+
+/* ============================================================
+   🙈 Structure Decorators - Safe scaled-down version
+   ============================================================ */
+
+/* 1. File Main Header (# 📄 File name): Elegantly centered, like a physical book chapter */
+.cm-small-header {
+    display: block !important;
+    text-align: center !important;
+    font-size: var(--h2-size) !important;
+    color: var(--text-normal) !important;
+    font-weight: 700;
+    background-color: transparent !important;
+    border-bottom: none !important;
+    padding-top: 25px !important;
+    letter-spacing: 2px;
+}
+
+/* 2. Ensure CodeMirror decorators do not interfere with our sacred barriers */
+.cm-small-id {
+    display: none !important;
+}
+
+/* ============================================================
+   📱 Touch-friendly Outline (Structure View)
+   ============================================================ */
+
+/* Container for the entire panel */
+.ns-structure-container {
+    padding: 15px 10px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    /* 🔥 Absolutely locked: Horizontal scrolling strictly prohibited! */
+}
+
+/* Chapter container (like individual boxes) */
+.ns-chapter-box {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 8px;
+    word-wrap: break-word;
+    /* 🔥 Ensure long text in the info panel wraps automatically, preventing layout breaks */
+    overflow-wrap: break-word;
+}
+
+/* Chapter header card */
+.ns-chapter-card {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+    cursor: grab;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Scene list (where cards are placed) */
+.ns-scene-list {
+    min-height: 20px;
+    /* Can be dragged into even if empty */
+    padding: 2px;
+}
+
+/* Scene card (Extra large for easy touch) */
+.ns-scene-card {
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    border-left: 4px solid var(--text-muted);
+    /* Add a line on the left for identification */
+    border-radius: 6px;
+    padding: 12px 10px;
+    /* Larger padding */
+    margin-bottom: 8px;
+    cursor: grab;
+    transition: transform 0.1s, box-shadow 0.1s;
+
+    /* Prevent text wrapping, truncate with ... */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+
+    cursor: pointer;
+}
+
+.ns-scene-card:hover {
+    border-color: var(--interactive-accent);
+    /* Border color change */
+    background-color: var(--background-primary-alt);
+    /* Slight background change */
+    transform: translateY(-1px);
+    /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Drag and drop visual effects */
+.sortable-ghost {
+    opacity: 0.4;
+    background-color: var(--interactive-accent);
+}
+
+.sortable-drag {
+    cursor: grabbing;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Refresh button */
+.ns-refresh-btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* ============================================================
+   🎛️ Control Panel UI
+   ============================================================ */
+
+/* Container for top buttons and tabs (🔥 Ultimate sticky header) */
+.ns-control-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid var(--background-modifier-border);
+
+    /* 🔥 Fix: Precisely offset the 10px margin, not a single pixel out of bounds! */
+    margin: -15px -10px 10px -10px;
+    padding: 15px 10px 10px 10px;
+
+    position: sticky;
+    top: -15px;
+    background-color: var(--background-primary);
+    z-index: 99;
+}
+
+/* Horizontal button row */
+.ns-button-row {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.ns-button-row button {
+    flex: 1;
+    padding: 4px 8px;
+    font-size: 0.85em;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab row */
+.ns-tabs-row {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.ns-tab-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    box-shadow: none;
+    border-radius: 0;
+    opacity: 0.5;
+    cursor: pointer;
+    padding: 5px 0;
+    font-weight: normal;
+    transition: all 0.2s ease;
+}
+
+.ns-tab-btn:hover {
+    opacity: 0.8;
+}
+
+.ns-tab-btn.is-active {
+    opacity: 1;
+    border-bottom: 2px solid var(--interactive-accent);
+    font-weight: bold;
+    color: var(--text-normal);
+}
+
+/* ============================================================
+   🕰️ History Tab
+   ============================================================ */
+.ns-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2px;
+}
+
+.ns-history-card {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ns-history-header {
+    font-weight: bold;
+    font-size: 0.85em;
+    margin-bottom: 8px;
+    color: var(--text-accent);
+}
+
+.ns-history-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.ns-history-actions button {
+    flex: 1;
+    font-size: 0.8em;
+    padding: 2px 5px;
+}
+
+/* ============================================================
+   🏷️ Exclusive Scene Card Callout: [!NSmith]
+   ============================================================ */
+.callout[data-callout="nsmith"] {
+    --callout-color: 100, 150, 255;
+    /* Blue theme, rgb values can be freely changed */
+    --callout-icon: lucide-film;
+    /* Movie scene icon */
+    background-color: rgba(var(--callout-color), 0.1);
+    border-left: 4px solid rgb(var(--callout-color));
+}
+
+/* ============================================================
+   🥷 Exclusive Scene Card ID Invisibility Cloak
+   ============================================================ */
+.ns-id {
+    display: none;
+}
+
+/* 3. File ID (<span class="ns-file-id">): From invisible to 'System Defense Line' */
+.ns-file-id {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 0 !important;
+    /* Perfectly hide the original obtrusive ID gibberish */
+    color: transparent !important;
+    user-select: none !important;
+    /* Reduce the chance of accidental mouse selection */
+    pointer-events: none !important;
+    /* Mouse clicks will pass straight through */
+    margin-bottom: 30px;
+}
+
+/* 4. Use CSS pseudo-elements to magically conjure a warning divider! */
+.ns-file-id::before {
+    content: "━━━━━━━━ ✂️ System File Boundary ‧ Do Not Delete ✂️ ━━━━━━━━";
+    font-size: 12px;
+    color: var(--text-faint);
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+/* ============================================================
+   🎨 NovelSmith Scene Card Color System (Auto-adapts to Dark/Light modes)
+   ============================================================ */
+
+/* Default border color, looks good even before a color is picked */
+.ns-scene-card {
+    border-left: 4px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Slightly darken on hover for better tactile feel */
+.ns-scene-card:hover {
+    filter: brightness(0.95);
+}
+
+.theme-dark .ns-scene-card:hover {
+    filter: brightness(1.15);
+}
+
+/* 6 main colors with transparent watercolor background + solid left border */
+.ns-scene-card.ns-color-red {
+    background-color: rgba(var(--color-red-rgb), 0.15) !important;
+    border-left-color: var(--color-red) !important;
+}
+
+.ns-scene-card.ns-color-orange {
+    background-color: rgba(var(--color-orange-rgb), 0.15) !important;
+    border-left-color: var(--color-orange) !important;
+}
+
+.ns-scene-card.ns-color-green {
+    background-color: rgba(var(--color-green-rgb), 0.15) !important;
+    border-left-color: var(--color-green) !important;
+}
+
+.ns-scene-card.ns-color-blue {
+    background-color: rgba(var(--color-blue-rgb), 0.15) !important;
+    border-left-color: var(--color-blue) !important;
+}
+
+.ns-scene-card.ns-color-purple {
+    background-color: rgba(var(--color-purple-rgb), 0.15) !important;
+    border-left-color: var(--color-purple) !important;
+}
+
+.ns-scene-card.ns-color-grey {
+    /* Grey uses Obsidian's default base color for maximum harmony */
+    background-color: rgba(var(--color-base-60-rgb), 0.15) !important;
+    border-left-color: var(--text-muted) !important;
+}
+
+/* ============================================================
+   🎨 Scene Card Callout Linked Colors (Supports Dark/Light modes)
+   ============================================================ */
+
+/* Default (Compatible with older cards) */
+.callout[data-callout="nsmith"],
+.callout[data-callout="nsmith-default"] {
+    --callout-color: var(--color-base-60-rgb);
+    --callout-icon: lucide-clapperboard;
+}
+
+/* Colorful transformations */
+.callout[data-callout="nsmith-red"] {
+    --callout-color: var(--color-red-rgb);
+    --callout-icon: lucide-clapperboard;
+}
+
+.callout[data-callout="nsmith-orange"] {
+    --callout-color: var(--color-orange-rgb);
+    --callout-icon: lucide-clapperboard;
+}
+
+.callout[data-callout="nsmith-green"] {
+    --callout-color: var(--color-green-rgb);
+    --callout-icon: lucide-clapperboard;
+}
+
+.callout[data-callout="nsmith-blue"] {
+    --callout-color: var(--color-blue-rgb);
+    --callout-icon: lucide-clapperboard;
+}
+
+.callout[data-callout="nsmith-purple"] {
+    --callout-color: var(--color-purple-rgb);
+    --callout-icon: lucide-clapperboard;
+}
+
+.callout[data-callout="nsmith-grey"] {
+    --callout-color: var(--color-base-60-rgb);
+    --callout-icon: lucide-clapperboard;
+}
+
+/* ============================================================
+   ✨ 按鈕點擊特效 (Button Animation Effects)
+   ============================================================ */
+@keyframes ns-button-click-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.92);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ns-btn-flash {
+    animation: ns-button-click-pulse 0.3s ease-out !important;
+    background-color: var(--interactive-accent) !important;
+    color: var(--text-on-accent) !important;
+    transition: all 0.2s ease;
+}
