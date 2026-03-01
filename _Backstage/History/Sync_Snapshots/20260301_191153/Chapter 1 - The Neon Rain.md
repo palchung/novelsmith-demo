@@ -6,6 +6,16 @@
 
 The acid rain hammered against the reinforced glass of Jax's apartment. He stared down at the sprawling mess of [[Sector 4]], watching the hover-trains weave through the glowing skyscrapers owned by [[OmniCorp]]. He checked his [[Neural-Link]]; the encrypted message from Elara was still there. The job was tonight.
 
+
+
+###### 🎬 try <span class="ns-id" data-scene-id="ed6d0e2c-129" data-warning="⛔️ ID (Do not edit)" data-color="red"></span>
+> [!NSmith-red] Scene Info
+> - Time:: 23:00
+> - POV:: Jax
+> - Status:: #Draft
+
+
+
 ###### 🎬 The Meetup <span class="ns-id" data-scene-id="book1-002" data-color="blue"></span>
 > [!NSmith-blue] Scene Info
 > - Time:: 23:45
