@@ -14,4 +14,3 @@ Kalen adjusted his cybernetic visor as the neon rain poured down. The streets of
 
 "System link established," whispered Kaelan. He gripped his plasma blaster. Kalen was ready for the ambush, but the corporate guards were already closing in on Kealen's position.
 
-http://Kalen.com
