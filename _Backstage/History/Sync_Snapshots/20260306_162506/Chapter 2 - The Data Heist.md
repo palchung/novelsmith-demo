@@ -1,3 +1,10 @@
+---
+scene_id: book1-001
+---
+huhiuhiuhiuh
+
+
+
 ######  The Escape <span class="ns-id" data-scene-id="book1-004" data-color="blue"></span>
 > [!NSmith-blue] Scene Info
 > - Time:: 01:30

@@ -1,14 +1,14 @@
 ---
 Try: Dataview_Target
-Updated: 2026-03-03 20:49:32
+Updated: 2026-03-08 13:32:36
 ---
 
 # 📊 Scenes Database (Auto-generated)
-> [!warning] Please don't modify this mardown file manually 
+> [!warning] Please don't modify this markdown file manually 
 
 ## [[Chapter 1 - The Neon Rain]]
-- [Scene:: [[Chapter 1 - The Neon Rain#The Drop Point|The Drop Point]]] [SceneName:: The Drop Point] [SceneID:: `book1-001`] [Color:: 🔵 Blue (Calm/Protagonist)] [Time:: 23:00] [POV:: Jax] [Status:: #Draft]
-- [Scene:: [[Chapter 1 - The Neon Rain#The Meetup|The Meetup]]] [SceneName:: The Meetup] [SceneID:: `book1-002`] [Color:: 🔵 Blue (Calm/Protagonist)] [Time:: 23:45] [POV:: Elara] [Status:: #Draft]
+- [Scene:: [[Chapter 1 - The Neon Rain#The Drop Point|The Drop Point]]] [SceneName:: The Drop Point] [SceneID:: `book1-001`] [Color:: 🔵 Blue (Calm/Protagonist)] [Time:: 23:00] [POV:: [[Jax]]] [Location:: [[HongKong]], [[NewYork]], [[LOP lop]], [[Macau]]] [Status:: #Draft]
+- [Scene:: [[Chapter 1 - The Neon Rain#The Meetup|The Meetup]]] [SceneName:: The Meetup] [SceneID:: `book1-002`] [Color:: 🔵 Blue (Calm/Protagonist)] [Time:: 23:45] [POV:: [[Elara]]] [Player:: [[Pal]], [[Jasmine]]] [Status:: #Draft]
 ---
 ## [[Chapter 2 - The Data Heist]]
 - [Scene:: [[Chapter 2 - The Data Heist#The Escape|The Escape]]] [SceneName:: The Escape] [SceneID:: `book1-004`] [Color:: 🔵 Blue (Calm/Protagonist)] [Time:: 01:30] [POV:: Elara] [Status:: #Draft]

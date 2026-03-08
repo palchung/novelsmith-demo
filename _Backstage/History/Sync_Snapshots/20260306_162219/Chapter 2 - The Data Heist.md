@@ -5,7 +5,6 @@
 > - Status:: #Draft
 
 "They know we're here!" Jax's voice crackled through the comms. Elara cursed and armed her plasma rifle. "Get to the extraction point at [[Sector 4]]! I'll hold them off!" Red alarms painted the corridor in a chaotic strobe light. The heist had just turned into a fight for survival.
-
 ######  Infiltration <span class="ns-id" data-scene-id="book1-003" data-color="blue"></span>
 > [!NSmith-blue] Scene Info
 > - Time:: 01:15
